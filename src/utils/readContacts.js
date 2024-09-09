@@ -6,5 +6,3 @@ export const readContacts = async () => {
   const contacts = await fs.readFile(PATH_DB);
   return JSON.parse(contacts);
 };
-
-console.log(await readContacts());
